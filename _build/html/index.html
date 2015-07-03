@@ -1,0 +1,395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Welcome to Sphinx_text’s documentation! &mdash; Sphinx_text 2.7 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Sphinx_text 2.7 documentation" href="#" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="welcome-to-sphinx-text-s-documentation">
+<h1>Welcome to Sphinx_text&#8217;s documentation!<a class="headerlink" href="#welcome-to-sphinx-text-s-documentation" title="Permalink to this headline">¶</a></h1>
+<p>Contents:</p>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+<span class="target" id="module-sip_model"></span><dl class="class">
+<dt id="sip_model.SIP_DN">
+<em class="property">class </em><code class="descclassname">sip_model.</code><code class="descname">SIP_DN</code><span class="sig-paren">(</span><em>number</em>, <em>register=1</em>, <em>numberForCall=None</em>, <em>numberForExtCall=None</em>, <em>scsEndPoint=None</em>, <em>endpointType=''</em>, <em>endpointParams=None</em>, <em>tserver=None</em>, <em>sipNode=None</em>, <em>controllerType='TController'</em><span class="sig-paren">)</span><a class="headerlink" href="#sip_model.SIP_DN" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="sip_model.SIP_DN.ActivateExtendedAbsenceGreeting">
+<code class="descname">ActivateExtendedAbsenceGreeting</code><span class="sig-paren">(</span><em>dtmf='7'</em>, <em>interruptMenuAfter=4</em>, <em>timeoutAfter=2</em><span class="sig-paren">)</span><a class="headerlink" href="#sip_model.SIP_DN.ActivateExtendedAbsenceGreeting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send DTMF to ActivateExtendedAbsenceGreeting
+parameters:</p>
+<blockquote>
+<div>mailbox                 - object VM_DN
+dtmf                    - string
+interruptMenuAfter      - int, prompt duration in seconds &#8216;To confirm press...&#8217;</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="sip_model.SIP_DN.ActivatePersonalGreeting">
+<code class="descname">ActivatePersonalGreeting</code><span class="sig-paren">(</span><em>dtmf='6'</em>, <em>interruptMenuAfter=4</em>, <em>timeoutAfter=2</em><span class="sig-paren">)</span><a class="headerlink" href="#sip_model.SIP_DN.ActivatePersonalGreeting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send DTMF to ActivatePersonalGreeting(
+parameters:</p>
+<blockquote>
+<div>mailbox                 - object VM_DN
+dtmf                    - string
+interruptMenuAfter      - int, prompt duration in seconds &#8216;To confirm press...&#8217;</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="sip_model.SIP_DN.ActivateStandardGreeting">
+<code class="descname">ActivateStandardGreeting</code><span class="sig-paren">(</span><em>dtmf='5'</em>, <em>interruptMenuAfter=3</em>, <em>timeoutAfter=2</em><span class="sig-paren">)</span><a class="headerlink" href="#sip_model.SIP_DN.ActivateStandardGreeting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send DTMF with confirm
+interruptMenuAfter  - int, prompt duration in seconds &#8216;To confirm press...&#8217;
+dtmf - string</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sip_model.SIP_DN.AlternateCall">
+<code class="descname">AlternateCall</code><span class="sig-paren">(</span><em>heldCall=None</em>, <em>curCall=None</em>, <em>extensions=None</em>, <em>reasons=None</em>, <em>byDefault=0</em><span class="sig-paren">)</span><a class="headerlink" href="#sip_model.SIP_DN.AlternateCall" title="Permalink to this definition">¶</a></dt>
+<dd><p>just to make sure we do it all right</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sip_model.SIP_DN.Authenticate">
+<code class="descname">Authenticate</code><span class="sig-paren">(</span><em>interruptMenuAfter=2</em>, <em>timeoutAfter=4</em><span class="sig-paren">)</span><a class="headerlink" href="#sip_model.SIP_DN.Authenticate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enter password
+parameters:</p>
+<blockquote>
+<div>interruptMenuAfter - int, seconds
+timeoutAfter - int, seconds</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="sip_model.SIP_DN.CancelMonitoring">
+<code class="descname">CancelMonitoring</code><span class="sig-paren">(</span><em>agentDN</em>, <em>extensions=None</em><span class="sig-paren">)</span><a class="headerlink" href="#sip_model.SIP_DN.CancelMonitoring" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cancel monitoring session. Does not work if session is cancelled during the call
+Parameters:</p>
+<blockquote>
+<div>agentDN    - DN object
+extensions - dict</div></blockquote>
+<p>Return       - None</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sip_model.SIP_DN.ChangeExtendedAbsenceGreeting">
+<code class="descname">ChangeExtendedAbsenceGreeting</code><span class="sig-paren">(</span><em>tone</em>, <em>dtmf='1'</em>, <em>duration=6</em>, <em>interruptMenuAfter=3</em>, <em>maxPromptTimeout=12</em>, <em>timeoutAfter=2</em><span class="sig-paren">)</span><a class="headerlink" href="#sip_model.SIP_DN.ChangeExtendedAbsenceGreeting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change Change Extended Absence Greeting
+parameters:</p>
+<blockquote>
+<div>mailbox                    - object VM_DN
+tone                       - str (letter)
+dtmf                       - str
+interruptMenuAfter         - int, seconds
+maxPromptTimeout           - int, seconds, timeout to wait for &#8216;beep&#8217; and following &#8216;_&#8217; Rx</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="sip_model.SIP_DN.ChangePassword">
+<code class="descname">ChangePassword</code><span class="sig-paren">(</span><em>newPassword</em>, <em>dtmf='2'</em>, <em>interruptMenuAfter=3</em>, <em>timeoutAfterPassword=6</em><span class="sig-paren">)</span><a class="headerlink" href="#sip_model.SIP_DN.ChangePassword" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change password
+parameters:</p>
+<blockquote>
+<div>mailbox               - object VM_DN
+newPassword           - str
+timeoutAfterPassword  - int, seconds</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="sip_model.SIP_DN.ChangePersonalGreeting">
+<code class="descname">ChangePersonalGreeting</code><span class="sig-paren">(</span><em>tone</em>, <em>dtmf='2'</em>, <em>duration=6</em>, <em>interruptMenuAfter=3</em>, <em>maxPromptTimeout=12</em>, <em>timeoutAfter=2</em><span class="sig-paren">)</span><a class="headerlink" href="#sip_model.SIP_DN.ChangePersonalGreeting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change personal greeting
+parameters:</p>
+<blockquote>
+<div>mailbox                    - object VM_DN
+tone                       - str (letter)
+dtmf                       - str
+interruptMenuAfter         - int, seconds
+maxPromptTimeout           - int, seconds, timeout to wait for &#8216;beep&#8217; and following &#8216;_&#8217; Rx</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="sip_model.SIP_DN.ConfirmGreeting">
+<code class="descname">ConfirmGreeting</code><span class="sig-paren">(</span><em>dtmf='#'</em>, <em>interruptMenuAfter=4</em><span class="sig-paren">)</span><a class="headerlink" href="#sip_model.SIP_DN.ConfirmGreeting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send DTMF to confirm greeting
+parameters:</p>
+<blockquote>
+<div>mailbox                 - object VM_DN
+dtmf                    - string
+interruptMenuAfter      - int, prompt duration in seconds &#8216;To confirm press...&#8217;</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="sip_model.SIP_DN.ConfirmMessage">
+<code class="descname">ConfirmMessage</code><span class="sig-paren">(</span><em>dtmf='1'</em>, <em>interruptMenuAfter=2</em>, <em>timeoutAfter=1</em><span class="sig-paren">)</span><a class="headerlink" href="#sip_model.SIP_DN.ConfirmMessage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send DTMF to confirm message
+parameters:</p>
+<blockquote>
+<div>promptDuration  - int, prompt duration in seconds &#8216;To confirm press...&#8217;
+dtmf - string</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="sip_model.SIP_DN.ExitToMainMenu">
+<code class="descname">ExitToMainMenu</code><span class="sig-paren">(</span><em>dtmf='*'</em>, <em>interruptMenuAfter=2</em><span class="sig-paren">)</span><a class="headerlink" href="#sip_model.SIP_DN.ExitToMainMenu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Access Exit to main menu
+parameters:</p>
+<blockquote>
+<div>dtmf                  - str
+promptDuration         - int, seconds</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="sip_model.SIP_DN.LeaveMessage">
+<code class="descname">LeaveMessage</code><span class="sig-paren">(</span><em>tone='A'</em>, <em>duration=8</em>, <em>maxPromptDuration=12</em><span class="sig-paren">)</span><a class="headerlink" href="#sip_model.SIP_DN.LeaveMessage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Leave voice message of specified tone and duration
+parameters:</p>
+<blockquote>
+<div>tone            - string, epiphone tone playing as voice message
+duration        - int, message duration
+promptDuration  - int, prompt duration in seconds</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="sip_model.SIP_DN.ListenToGreeting">
+<code class="descname">ListenToGreeting</code><span class="sig-paren">(</span><em>expectedTone</em>, <em>duration</em>, <em>timeoutToStabilize=8</em><span class="sig-paren">)</span><a class="headerlink" href="#sip_model.SIP_DN.ListenToGreeting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Listen to greeting. Verify that tone matches
+parameters:</p>
+<blockquote>
+<div>expectedTone   - str
+duration       - int, seconds
+timeoutToStabilize - int, seconds</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="sip_model.SIP_DN.ListenToMainMenu">
+<code class="descname">ListenToMainMenu</code><span class="sig-paren">(</span><em>interruptAfter=1</em>, <em>maxPromptTimeout=30</em><span class="sig-paren">)</span><a class="headerlink" href="#sip_model.SIP_DN.ListenToMainMenu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Listen main menu
+parameters:</p>
+<blockquote>
+<div>interruptAfter      - int, seconds. if -1, then no interrupt, wait until Rx = &#8216;_&#8217;
+maxPromptTimeout    - int, seconds, max time until Rx = &#8216;_&#8217;
+(not a very reliable method - Rx = &#8216;_&#8217; can be on other menus)</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="sip_model.SIP_DN.ListenToMenu">
+<code class="descname">ListenToMenu</code><span class="sig-paren">(</span><em>interruptMenuAfter=3</em><span class="sig-paren">)</span><a class="headerlink" href="#sip_model.SIP_DN.ListenToMenu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Listen to menu. No actual &#8216;interruption&#8217; but function exits after timeout
+parameters:</p>
+<blockquote>
+<div>interruptMenuAfter      - int, seconds</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="sip_model.SIP_DN.ListenToMessage">
+<code class="descname">ListenToMessage</code><span class="sig-paren">(</span><em>expectedTone</em>, <em>interrupt=1</em>, <em>duration=0</em>, <em>promptDuration=25</em><span class="sig-paren">)</span><a class="headerlink" href="#sip_model.SIP_DN.ListenToMessage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Listen to message. Verify that tone matches
+parameters:</p>
+<blockquote>
+<div>expectedTone   - str
+interrupt      - int. Defines if message is interrupted after expected tone detected
+duration       - int, seconds. Must be specified if interrupt = 0
+promptDuration -  int, seconds, max prompt duration (timeout to stabilize the tone)</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="sip_model.SIP_DN.ListenToRecordedGreeting">
+<code class="descname">ListenToRecordedGreeting</code><span class="sig-paren">(</span><em>dtmf='1'</em>, <em>interruptMenuAfter=5</em><span class="sig-paren">)</span><a class="headerlink" href="#sip_model.SIP_DN.ListenToRecordedGreeting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send DTMF to select replay recorded greeting. Listen to greeting and verify tone
+parameters:</p>
+<blockquote>
+<div>mailbox                 - object VM_DN
+dtmf                    - string
+interruptMenuAfter      - int, prompt duration in seconds &#8216;To confirm press...&#8217;</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="sip_model.SIP_DN.ListenToRecordedMessage">
+<code class="descname">ListenToRecordedMessage</code><span class="sig-paren">(</span><em>dtmf='2'</em>, <em>interruptMenuAfter=2</em><span class="sig-paren">)</span><a class="headerlink" href="#sip_model.SIP_DN.ListenToRecordedMessage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send DTMF to replay message, verify that message is the same as was recorded
+parameters:</p>
+<blockquote>
+<div>interruptMenuAfter  - int, prompt duration in seconds &#8216;To confirm press...&#8217;
+dtmf - string</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="sip_model.SIP_DN.ReleaseCall">
+<code class="descname">ReleaseCall</code><span class="sig-paren">(</span><em>call=None</em>, <em>byDefault=0</em>, <em>extensions=None</em><span class="sig-paren">)</span><a class="headerlink" href="#sip_model.SIP_DN.ReleaseCall" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method inherited from parent class because of required timeout when other party is in ringing state</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sip_model.SIP_DN.ReplayMessage">
+<code class="descname">ReplayMessage</code><span class="sig-paren">(</span><em>expectedTone</em>, <em>dtmf='11'</em>, <em>interruptMenuAfter=2</em>, <em>interrupt=1</em>, <em>duration=10</em><span class="sig-paren">)</span><a class="headerlink" href="#sip_model.SIP_DN.ReplayMessage" title="Permalink to this definition">¶</a></dt>
+<dd><p>interruptMenuAfter - int, time for prompt &#8216;To Replay message press...&#8217;</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sip_model.SIP_DN.RerecordMessage">
+<code class="descname">RerecordMessage</code><span class="sig-paren">(</span><em>tone='A'</em>, <em>duration=8</em>, <em>maxPromptDuration=3</em><span class="sig-paren">)</span><a class="headerlink" href="#sip_model.SIP_DN.RerecordMessage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Leave voice message of specified tone and duration
+parameters:</p>
+<blockquote>
+<div>tone            - string, epiphone tone playing as voice message
+duration        - int, message duration</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="sip_model.SIP_DN.SelectGreetingMenu">
+<code class="descname">SelectGreetingMenu</code><span class="sig-paren">(</span><em>dtmf='4'</em><span class="sig-paren">)</span><a class="headerlink" href="#sip_model.SIP_DN.SelectGreetingMenu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Select greeting menu
+parameters:</p>
+<blockquote>
+<div>dtmf                  - str</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="sip_model.SIP_DN.SelectNewMessages">
+<code class="descname">SelectNewMessages</code><span class="sig-paren">(</span><em>dtmf='1'</em><span class="sig-paren">)</span><a class="headerlink" href="#sip_model.SIP_DN.SelectNewMessages" title="Permalink to this definition">¶</a></dt>
+<dd><p>Access New Messages menu
+parameters:</p>
+<blockquote>
+<div>dtmf                  - str</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="sip_model.SIP_DN.SelectPersonalOptionsMenu">
+<code class="descname">SelectPersonalOptionsMenu</code><span class="sig-paren">(</span><em>dtmf='5'</em><span class="sig-paren">)</span><a class="headerlink" href="#sip_model.SIP_DN.SelectPersonalOptionsMenu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Access personal options
+parameters:</p>
+<blockquote>
+<div>dtmf                  - str</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="sip_model.SIP_DN.SelectSavedMessages">
+<code class="descname">SelectSavedMessages</code><span class="sig-paren">(</span><em>dtmf='3'</em><span class="sig-paren">)</span><a class="headerlink" href="#sip_model.SIP_DN.SelectSavedMessages" title="Permalink to this definition">¶</a></dt>
+<dd><p>Access Saved Messages menu
+parameters:</p>
+<blockquote>
+<div>dtmf                  - str</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="sip_model.SIP_DN.SetPriority">
+<code class="descname">SetPriority</code><span class="sig-paren">(</span><em>priority=1</em>, <em>interruptMenuAfter=3</em>, <em>timeoutAfter=2</em><span class="sig-paren">)</span><a class="headerlink" href="#sip_model.SIP_DN.SetPriority" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send DTMF with message priority
+parameters:</p>
+<blockquote>
+<div>priority - string
+promptDuration1  - int, prompt duration in seconds &#8216;To sent with normal priority...&#8217;
+promptDuration2  - int, prompt duration in seconds &#8216;Message Sent&#8217;</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="sip_model.SIP_DN.isInCall">
+<code class="descname">isInCall</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sip_model.SIP_DN.isInCall" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns tuple of current device states
+:return: tuple of boolean values: (does device have a parties, are there Established party)</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span>Index</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span>Module Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span>Search Page</span></a></li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Welcome to Sphinx_text&#8217;s documentation!</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2015, vgorelov.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.6</a>
+      
+      |
+      <a href="_sources/index.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
