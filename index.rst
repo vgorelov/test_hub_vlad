@@ -11,9 +11,9 @@ Contents:
 .. toctree::
    :maxdepth: 2
    
-.. automodule:: sip_model
+.. automodule:: test
 
-.. autoclass:: SIP_DN
+.. autoclass:: TestClass
    :members:
 
 

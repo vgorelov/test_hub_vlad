@@ -19,13 +19,13 @@ import shlex
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-#sys.path.insert(0, os.path.abspath('.'))
-sys.path.insert(0,r"C:\Users\vgorelov\QAART_hg_spb_rhel\tester")
-sys.path.insert(0,r"C:\Users\vgorelov\QAART_hg_spb_rhel\tester\tserver")
-sys.path.insert(0,r"C:\Users\vgorelov\QAART_hg_spb_rhel\tester\common")
-sys.path.insert(0,r"C:\Users\vgorelov\QAART_hg_spb_rhel\tester\libs\27\windows")
-sys.path.insert(0,r"C:\Users\vgorelov\QAART_hg_spb_rhel\tester\cfg")
-sys.path.insert(0,r"C:\Users\vgorelov\QAART_hg_spb_rhel\tester\sip")
+sys.path.insert(0, os.path.abspath('.'))
+#sys.path.insert(0,r"C:\Users\vgorelov\QAART_hg_spb_rhel\tester")
+#sys.path.insert(0,r"C:\Users\vgorelov\QAART_hg_spb_rhel\tester\tserver")
+#sys.path.insert(0,r"C:\Users\vgorelov\QAART_hg_spb_rhel\tester\common")
+#sys.path.insert(0,r"C:\Users\vgorelov\QAART_hg_spb_rhel\tester\libs\27\windows")
+#sys.path.insert(0,r"C:\Users\vgorelov\QAART_hg_spb_rhel\tester\cfg")
+#sys.path.insert(0,r"C:\Users\vgorelov\QAART_hg_spb_rhel\tester\sip")
 
 
 
